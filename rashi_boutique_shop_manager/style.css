@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.app-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+header h1 {
+    margin: 0;
+    color: #2c3e50;
+}
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+}
+.tab-btn {
+    padding: 10px 15px;
+    border: none;
+    background: #e2e8f0;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.tab-btn.active {
+    background: #3182ce;
+    color: white;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.card {
+    background: #ebf8ff;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    border-left: 5px solid #3182ce;
+}
+.card.alert {
+    background: #fff5f5;
+    border-left-color: #e53e3e;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.form-row input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.btn {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+.btn.primary { background: #3182ce; }
+.btn.success { background: #38a169; }
+.btn.danger { background: #e53e3e; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+table th, table td {
+    border: 1px solid #cbd5e0;
+    padding: 10px;
+    text-align: left;
+}
+table th {
+    background: #edf2f7;
+}
